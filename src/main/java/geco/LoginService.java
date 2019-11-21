@@ -60,6 +60,7 @@ public class LoginService {
      * Recherche tous les logins
      *
      * @return la liste de tous les logins
+     * @param s
      */
     public List<String> findAllLogins() {
         return  loginsExistants;
