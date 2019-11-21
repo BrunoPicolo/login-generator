@@ -56,9 +56,4 @@ public class LoginGenerator {
         return pattern.matcher(nfdNormalizedString).replaceAll("");
     }
 
-
-
-
-
-
 }
