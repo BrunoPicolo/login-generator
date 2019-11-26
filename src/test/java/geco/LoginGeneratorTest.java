@@ -4,8 +4,6 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
-
 public class LoginGeneratorTest {
 
     LoginGenerator loginGenerator;
@@ -50,5 +48,13 @@ public class LoginGeneratorTest {
         final String login4 = loginGenerator.generateLoginForNomAndPrenom(n4,p4);
         // THEN
         Assert.assertEquals("New login", "PDUR1", login4);
+
+        // GIVEN
+        final String n5 = "Du";
+        final String p5 = "Paul";
+        // WHEN
+        final String login5 = loginGenerator.generateLoginForNomAndPrenom(n5,p5);
+        // THEN
+        Assert.assertEquals("New login", "PDU", login5);
     }
 }
